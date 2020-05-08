@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -184,23 +185,43 @@ class MyHomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CategoryTab(
-                            title: "All Services", icon: Icons.category),
+                          title: "All Services",
+                          icon: Icons.category,
+                        ),
                         CategoryTab(
-                            title: "Mobile Credit", icon: Icons.phone_android),
+                          title: "Mobile Credit",
+                          icon: Icons.phone_android,
+                        ),
                         CategoryTab(
-                            title: "Electricity", icon: Icons.query_builder),
-                        CategoryTab(title: "Water", icon: Icons.query_builder),
+                          title: "Electricity",
+                          icon: FontAwesomeIcons.powerOff,
+                        ),
+                        CategoryTab(
+                          title: "Water",
+                          icon: FontAwesomeIcons.water,
+                        ),
                       ],
                     ),
                     SizedBox(height: 25),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CategoryTab(title: "Internet", icon: Icons.wifi),
-                        CategoryTab(title: "Cable TV", icon: Icons.tv),
                         CategoryTab(
-                            title: "Installment", icon: Icons.date_range),
-                        CategoryTab(title: "Insurance", icon: Icons.link_off),
+                          title: "Internet",
+                          icon: Icons.wifi,
+                        ),
+                        CategoryTab(
+                          title: "Cable TV",
+                          icon: Icons.tv,
+                        ),
+                        CategoryTab(
+                          title: "Installment",
+                          icon: Icons.date_range,
+                        ),
+                        CategoryTab(
+                          title: "Insurance",
+                          icon: FontAwesomeIcons.heartbeat,
+                        ),
                       ],
                     ),
                   ],
